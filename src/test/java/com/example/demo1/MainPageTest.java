@@ -52,8 +52,12 @@ public class MainPageTest {
         ));
         List<WebElement> results = driver.findElements(By.cssSelector(":not(.b_adurl) > cite"));
         clickElement(results, 0);
+        ArrayList<String> tabs = new ArrayList<> (driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(0));
 
         System.out.println("Перешли по ссылке");
+        String currentUrl = driver.getCurrentUrl();
+        assertEquals("https://www.selenium.dev/", currentUrl);
     }
 
     public void clickElement(List<WebElement> results, int num){
