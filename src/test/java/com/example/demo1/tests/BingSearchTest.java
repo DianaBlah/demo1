@@ -57,31 +57,6 @@ public class BingSearchTest {
 
         assertEquals(input, rp.getTextFromSearchField(), "Текст не совпал");
     }
-
-    //@Test
-    //public void searchResultsTest1() {
-       // String input = "Selenium";
-       // MainPage mp = new MainPage(driver);
-      //  mp.sendText(input);
-
-       // WebElement searchField = driver.findElement(By.cssSelector("#sb_form_q"));
-       // By cite = By.cssSelector(":not(.b_adurl) > cite");
-
-
-        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
-        //wait.until(ExpectedConditions.and(
-        //        ExpectedConditions.textToBePresentInElementLocated(cite, "selenium"),
-        //        ExpectedConditions.elementToBeClickable(cite)));
-
-       // List<WebElement> results = driver.findElements(cite);
-
-      //  clickElement(results, 0);
-      //  ArrayList<String> tabs = new ArrayList<> (driver.getWindowHandles());
-       // driver.switchTo().window(tabs.get(0));
-
-      //  String currentUrl = driver.getCurrentUrl();
-      //  assertEquals("https://www.selenium.dev/", currentUrl, "Открылась другая ссылка");
-   // }
 }
 
 
