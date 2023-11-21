@@ -40,8 +40,6 @@ public class BingSearchTest {
 
         ResultPage rp = new ResultPage(driver);
         rp.clickElement(0);
-        ArrayList<String> tabs = new ArrayList<> (driver.getWindowHandles());
-        driver.switchTo().window(tabs.get(0));
 
         assertEquals("https://www.selenium.dev/", driver.getCurrentUrl(), "Открылась другая ссылка");
     }
