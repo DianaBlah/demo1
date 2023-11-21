@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ResultPage {
@@ -28,8 +27,6 @@ public class ResultPage {
                 ExpectedConditions.elementToBeClickable(By.cssSelector(":not(.b_adurl) > cite"))
         ));
         results.get(num).click();
-        ArrayList<String> tabs = new ArrayList<> (driver.getWindowHandles());
-        driver.switchTo().window(tabs.get(0));
         System.out.println("Перешли по ссылке нормер " + num);
 
     }
